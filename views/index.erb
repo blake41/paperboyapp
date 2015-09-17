@@ -1,0 +1,4 @@
+<%= "We've created #{session[:house_count]} houses"%><br>
+<% @houses.each do |house| %>
+  <a href=<%= "/houses/#{house.id}" %>><%= house.address %><br></a>
+<% end %>
